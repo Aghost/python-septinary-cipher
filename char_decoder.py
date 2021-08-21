@@ -17,29 +17,29 @@ def to_str(ascii_list):
     return ''.join(string)
 
 def the_print_f(val, cod):
-    print("henk {1}:{0}".format(str(val), cod))
+    print("inputstr {1}:{0}".format(str(val), cod))
 
 with open('./data.txt', 'r') as file:
     data = file.read().replace('\n', '')
         
 print("data :" + data + "\n\n")
 
-henk = to_ascii(data)   # convert henk to ascii values
-the_print_f(henk, "to ascii")
+inputstr = to_ascii(data)   # convert inputstr to ascii values
+the_print_f(inputstr, "to ascii")
 
-henk = to_cypher(henk, 10)  # convert henk to cypher values
-the_print_f(henk, "to cypher +10")
+inputstr = to_cypher(inputstr, 10)  # convert inputstr to cypher values
+the_print_f(inputstr, "to cypher +10")
 
-henk = to_str(henk) # convert henk to string
-the_print_f(henk, "to string")
+inputstr = to_str(inputstr) # convert inputstr to string
+the_print_f(inputstr, "to string")
 
-henk = to_ascii(data)   # convert henk to ascii values
-the_print_f(henk, "to ascii")
+inputstr = to_ascii(data)   # convert inputstr to ascii values
+the_print_f(inputstr, "to ascii")
 
-henk = to_str(henk)
-the_print_f(henk, "to string")
+inputstr = to_str(inputstr)
+the_print_f(inputstr, "to string")
 
 print("done")
 
-#henk = henk.encode('utf-8', 'strict')
-#print(henk.decode('utf-8', 'strict'))
+#inputstr = inputstr.encode('utf-8', 'strict')
+#print(inputstr.decode('utf-8', 'strict'))
